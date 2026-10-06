@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranjali Thakare | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f5f7fb;
+            color: #222;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            padding: 20px 8%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: white;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: #172554;
+            margin-bottom: 10px;
+        }
+
+        .hero h3 {
+            font-size: 24px;
+            color: #475569;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin: 5px;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #172554;
+            margin-bottom: 35px;
+            font-size: 32px;
+        }
+
+        .about {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .skill {
+            background: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            font-weight: bold;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            color: #1d4ed8;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .contact {
+            text-align: center;
+            background: #eaf0ff;
+        }
+
+        footer {
+            text-align: center;
+            background: #172554;
+            color: white;
+            padding: 20px;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h2>Pranjali Thakare</h2>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#internship">Internship</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Hi, I'm Pranjali Thakare</h1>
+
+    <h3>MCA Graduate | Python | SQL | Power BI | Excel</h3>
+
+    <p>
+        A passionate fresher interested in IT, Data Analytics and
+        technology. I enjoy working with data, creating dashboards
+        and developing practical projects.
+    </p>
+
+    <div>
+        <a class="btn" href="#projects">View My Projects</a>
+        <a class="btn" href="#contact">Contact Me</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about">
+        <p>
+            I am an MCA graduate with a background in Computer Applications.
+            I have practical experience through a Data Analytics internship
+            and hands-on projects using Excel, Power BI, Python and SQL.
+        </p>
+
+        <br>
+
+        <p>
+            I am looking for an opportunity in the IT sector where I can
+            apply my technical skills, learn new technologies and grow
+            professionally.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Technical Skills</h2>
+
+    <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Excel</div>
+        <div class="skill">Power BI</div>
+        <div class="skill">Data Cleaning</div>
+        <div class="skill">Data Visualization</div>
+        <div class="skill">EDA</div>
+        <div class="skill">Dashboard Development</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects">
+
+        <div class="card">
+            <h3>News Website Traffic Analysis</h3>
+
+            <p>
+                Analyzed website traffic and user behavior using
+                Google Analytics data. Created dashboards and
+                visualizations to understand traffic sources,
+                user engagement, clicks, page views and revenue.
+            </p>
+
+            <p>
+                <strong>Tools:</strong> Excel, Power BI, Python, SQL
+            </p>
+
+            <a class="btn"
+               href="https://github.com/thakarepranjali35-cloud/New-Websites-Traffic-Analysis-Using-Google-Analytics-Data"
+               target="_blank">
+               View on GitHub
+            </a>
+        </div>
+
+
+        <div class="card">
+            <h3>AI Job Market Trend Forecast</h3>
+
+            <p>
+                A data analysis project focused on identifying
+                trends in the AI job market using data analysis
+                techniques and forecasting concepts.
+            </p>
+
+            <p>
+                <strong>Tools:</strong> Python, SQL
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="internship">
+    <h2 class="section-title">Internship</h2>
+
+    <div class="card">
+        <h3>Data Analytics Intern</h3>
+
+        <p>
+            Completed a Data Analytics internship where I worked
+            with data cleaning, transformation, exploratory data
+            analysis and dashboard development.
+        </p>
+
+        <p>
+            <strong>Skills Used:</strong>
+            Excel, Power BI, Python and SQL
+        </p>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2 class="section-title">Let's Connect</h2>
+
+    <p>
+        Interested in connecting with me for opportunities or
+        professional collaboration?
+    </p>
+
+    <br>
+
+    <a class="btn"
+       href="https://www.linkedin.com/in/pranjali-thakare-20513b421/"
+       target="_blank">
+       LinkedIn
+    </a>
+
+    <a class="btn"
+       href="https://github.com/thakarepranjali35-cloud"
+       target="_blank">
+       GitHub
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 Pranjali Thakare. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
